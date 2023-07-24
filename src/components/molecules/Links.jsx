@@ -1,22 +1,6 @@
 import LinkItem from "../atoms/LinkItem";
 
-export default function Links() {
-    const pathname = window.location.href
-    const links = [
-        {
-            texto: 'Our rates',
-            url: `${pathname}#rates`
-        },{
-            texto: 'Favorite projects',
-            url: `${pathname}#projects`
-        },{
-            texto: 'Reviews',
-            url: `${pathname}#reviews`
-        },{
-            texto: 'Contacts',
-            url: `${pathname}#contacts`
-        },
-    ]
+export default function Links({links}) {
     return (
         <div className="flex gap-8 max-w-fit">
             {
