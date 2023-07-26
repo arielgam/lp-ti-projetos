@@ -5,17 +5,21 @@ export default function Title(props) {
                 props.type === 'primary' &&
                 <h1
                     className={`
-                    
+                        text-[#030303]
+                        text-6xl
+                        font-normal
                     `}
                 >
                     {props.children}
                 </h1>
             }
             {
-                props.type === 'secundary' &&
+                props.type === 'secondary' &&
                 <h2
                     className={`
-                    
+                        text-[#030303]
+                        text-5xl
+                        font-normal
                     `}
                 >
                     {props.children}
